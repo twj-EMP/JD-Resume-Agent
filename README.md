@@ -72,19 +72,13 @@ AI‑Agent/
 
 ### 1.环境准备
 
-```bash
-
 conda create -n agent\_demo python=3.11 -y
 
 conda activate agent\_demo
 
 pip install -r requirements.txt
 
-
-
 ### 2. 配置密钥
-
-
 
 复制 `.env.example` → 新建 `.env`，填入你的 DeepSeek API\_KEY。
 
@@ -92,13 +86,7 @@ pip install -r requirements.txt
 
 ### 3. 控制台运行
 
-
-
-```
-
 python main.py
-
-```
 
 
 > 
@@ -111,23 +99,13 @@ python main.py
 
 ### 4.Gradio 网页运行
 
-
-
-```
-
 python gradio\_app.py
-
-```
-
-
 
 浏览器访问 \[http://127.0.0.1:7860](http://127.0.0.1:7860)
 
 
 
 ## 💡控制台指令说明
-
-
 
 \- `new`：开启新一轮 JD‑简历匹配任务
 
@@ -136,10 +114,7 @@ python gradio\_app.py
 \- `load sess\_xxxxxx`：加载历史会话文件继续对话
 
 
-
 ## 📌遇到的问题与踩坑记录
-
-
 
 1. langchain‑community 包官方停止维护，部分加载器还需要继续使用
 
@@ -152,10 +127,7 @@ python gradio\_app.py
 5. 更新 PDF 必须手动删除 chroma\_db，向量库不会自动检测文件变更
 
 
-
 ## 📝后续优化方向
-
-
 
 1. 消息窗口截断，防止 token 无限上涨
 
