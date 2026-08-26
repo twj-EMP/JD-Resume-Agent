@@ -1,0 +1,17 @@
+# 密钥文件
+.env
+# 向量库、会话缓存
+chroma_db/
+sessions/
+docs/*.pdf
+!docs/.gitkeep
+# python缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+# IDE
+.idea/
+.vscode/
+Thumbs.db
+.DS_Store
